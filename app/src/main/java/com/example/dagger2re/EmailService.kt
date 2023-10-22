@@ -1,8 +1,9 @@
 package com.example.dagger2re
 
 import android.util.Log
+import javax.inject.Inject
 
-class EmailService {
+class EmailService @Inject constructor(){
 
 fun send(to:String,from:String,subject:String,body:String){
 
